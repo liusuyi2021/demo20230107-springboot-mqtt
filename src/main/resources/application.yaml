@@ -1,0 +1,13 @@
+# mqtt
+spring:
+  main:
+    allow-circular-references: true
+  mqtt:
+    username: admin
+    password: 12345
+    hostUrl: tcp://192.168.3.8:1883
+    clientId: client${random.int}
+    defaultTopic: device,ard
+    timeout: 100
+    keepalive: 60
+    enabled: true
